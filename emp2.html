@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🤝Profile</title>
+    <link rel="stylesheet" href="emp2.css">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="profile-container">
+        <h1>Create Your Employee Profile</h1>
+        <form class="profile-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="skills">Skills:</label>
+            <input type="text" id="skills" name="skills" required>
+
+            <label for="jobtype">Job Type:</label>
+            <select id="jobtype" name="jobtype" required>
+                <option value="fulltime">Full-time</option>
+                <option value="parttime">Part-time</option>
+                <option value="freelance">Freelance</option>
+            </select>
+
+            <button type="button"> <a href="sucess.html">Next</a></button>
+        </form>
+    </div>
+
+    <script>
+        function scrollToNext() {
+            const profileForm = document.querySelector('.profile-form');
+            profileForm.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

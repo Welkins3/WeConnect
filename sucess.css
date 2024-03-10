@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden; /* Prevents scrolling on the background animation */
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('bgimage.jpg'); /* Replace with your own animated background */
+    
+    animation: backgroundAnimation 20s linear infinite;
+}
+
+.success-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #000000;
+}
+
+.success-box {
+    background: rgba(255, 254, 254, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333; /* Change color if needed */
+}
+
+p {
+    margin-bottom: 30px;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: #000000;
+    background-color: #3498db;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #2980b9;
+}
+
+@keyframes backgroundAnimation {
+    0% { background-position: 0 0; }
+    50% { background-position: 100% 0; }
+    100% { background-position: 0 0; }
+}

@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  .search-container {
+    text-align: center;
+    background-image: url('');
+    
+    padding: 50px;
+  }
+  .search-box {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .category-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  .category {
+    text-align: center;
+  }
+  .search-btn {
+    padding: 10px 20px;
+    background-color: #00cec9;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+  }
+ iframe{
+    width: 100vw; 
+    height: 25vh; 
+    border: none;
+ }
